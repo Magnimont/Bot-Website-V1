@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #121212;
+}
+*::selection {
+    color: black;
+    background: #00008B;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
+button {
+    font-family: 'Poppins', sans-serif;
+}
+.menu {
+    padding-top: 47px;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.logo img {
+    width: 50px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.menu ul li {
+    display: inline-flex;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #b2b1b1;
+}
+.menu ul li a:hover {
+    color: #00008B;
+}
+
+.signup-btn {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(#121212,#121212), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.signup-btn:hover {
+    color: #fff;
+}
+
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.coming-soon {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+}
+.coming-soon h1 {
+    font-size: 80px;
+    margin: auto;
+    animation: drop 1.5s ease;
+}
+.coming-soon h1 span {
+    color: #00008B;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
